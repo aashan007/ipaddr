@@ -34,25 +34,26 @@ echo "Failed to connect to MySQL: " . mysqli_connect_error();
 
 $result = mysqli_query($con,"SELECT * FROM log");
 
-echo "<table border='1'>
+echo "<table border='1'class='table table-striped'>
+<thead>
 <tr>
 <th>id</th>
 <th>time</th>
 <th>ip_address</th>
-<th>hostname</th>
+<th>org</th>
 <th>cur_url</th>
 <th>pre_url</th>
 <th>xff_headers</th>
 <th>country</th>
 <th>city</th>
-
+</thead>
 
 </tr>";
 
 while($row = mysqli_fetch_array($result))
 {
 echo "<tr>";
-echo "<td>" . $row['id'] . "</td>";
+echo "<th scope='row'>" . $row['id'] . "</th>";
 echo "<td>" . $row['time'] . "</td>";
 echo "<td>" . $row['ip_address'] . "</td>";
 echo "<td>" . $row['hostname'] . "</td>";
