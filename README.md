@@ -21,5 +21,5 @@
 + Or use the query below:
 
     ```sql
-     CREATE TABLE `DATABASE_HERE`.`TABLE_HERE` ( `id` INT NOT NULL AUTO_INCREMENT , `time` TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP , `ip_address` VARCHAR(50) NOT NULL , `hostname` VARCHAR(100) NOT NULL , `cur_url` TEXT NOT NULL , `pre_url` TEXT NOT NULL , `xff_headers` TEXT NOT NULL , PRIMARY KEY (`id`)) ENGINE = InnoDB CHARSET=utf8 COLLATE utf8_general_ci; 
+     CREATE TABLE `DATABASE_HERE`.`TABLE_HERE` ( `id` INT NOT NULL AUTO_INCREMENT , `time` TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP , `ip_address` VARCHAR(50) NOT NULL , `hostname` VARCHAR(100) NOT NULL , `cur_url` TEXT NOT NULL , `pre_url` TEXT NOT NULL , `xff_headers` TEXT NOT NULL ,'country' VARCHAR(30) NOT NULL ,'city' VARCHAR(30) NOT NULL , PRIMARY KEY (`id`)) ENGINE = InnoDB CHARSET=utf8 COLLATE utf8_general_ci; 
      ```

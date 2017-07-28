@@ -1,11 +1,11 @@
-<?php 
+<?php
     $servername = "localhost";
     $username = "root";
-    $password = "";
+    $password = "gameofthrones";
     $port = 3306;
 
-    $database = "log";
-    $tablename = "log";
+    $database = "DATABASE_NAME_HERE";
+    $tablename = "TABLE_HERE";
 
     $warnings = false; //set to 'true' (without quotes) to enable warning reports
 ?>

@@ -1,7 +1,7 @@
 
 <?php //Start the Session
 session_start();
-$con=mysqli_connect("localhost","root","","log");
+$con=mysqli_connect("localhost","root","gameofthrones","DATABASE_NAME_HERE");
 if (isset($_POST['username']) and isset($_POST['password'])){
 $username = $_POST['username'];
 $password = $_POST['password'];
@@ -50,4 +50,3 @@ required>
 </div>
 </div>
 </html>
-

@@ -25,14 +25,14 @@ theme.min.css" >
 
 
 <?php
-$con=mysqli_connect("localhost","root","","log");
+$con=mysqli_connect("localhost","root","gameofthrones","DATABASE_NAME_HERE");
 // Check connection
 if (mysqli_connect_errno())
 {
 echo "Failed to connect to MySQL: " . mysqli_connect_error();
 }
 
-$result = mysqli_query($con,"SELECT * FROM log");
+$result = mysqli_query($con,"SELECT * FROM TABLE_HERE");
 
 echo "<table border='1'class='table table-striped'>
 <thead>
